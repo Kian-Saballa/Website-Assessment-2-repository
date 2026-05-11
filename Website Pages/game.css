@@ -1,0 +1,170 @@
+:root {
+    --bg-dark: #0f0f12;
+    --card-bg: #1a1a1f;
+    --primary-glow: red;
+    --text-main: #eeeeee;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background-color: black;
+    color: var(--text-main);
+    margin: 0;
+    padding-top: 60px;
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: rgba(22, 22, 26, 0.95);
+    border-bottom: 2px solid var(--primary-glow);
+    z-index: 1000;
+    padding: 15px 0;
+}
+
+.header1 {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 150px;
+  background-color: #0f0f12;
+}
+
+.logo {
+  width: 200px;
+  height: auto;
+}
+
+ .Game-title {
+  background-image: url('BBN\ The\ 1sts.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  color: white;
+  padding: 20px;
+  display: inline-block; 
+  opacity: 1000;
+  height: 100vh;
+  width: 90%;
+ }
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+nav li a {
+  display: inline-block;
+  padding: 10px 15px;
+  text-decoration: none;
+  color: red;
+  font-size: 40px;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-shadow: 0 0 10px #ff0000, 0 0 20px #ff0000, 0 0 30px #ff0000;
+}   
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.content-section {
+    padding: 60px 0;
+    border-bottom: 1px solid #333;
+    text-shadow: 0 0 10px #ff0000, 0 0 20px #ff0000, 0 0 30px #ff0000;
+    font-size: 20px;
+}
+
+.killers {
+    width: 300px;
+    height:auto;
+    background-color: #0f0f12;
+}
+
+header {
+    text-align: center;
+    padding: 80px 0;
+    background: linear-gradient(to bottom, #16161a, var(--bg-dark));
+}
+
+video {
+  width: 100%;
+  height: auto;
+  border-color: #ff0000;
+  border: 5px solid #ff0000;
+  box-shadow: 0 0 20px #ff0000, 0 0 40px #ff0000;
+}   
+
+h1 { font-size: 3.5rem; text-shadow: 0 0 15px var(--primary-glow); text-transform: uppercase; }
+
+.grid { 
+    display: flex;
+    flex-direction: column; 
+    gap: 20px; 
+}
+
+.grid2 { 
+    display: flex;
+    gap: 20px; 
+}
+
+.Button {
+    display: inline-block;
+  padding: 10px 20px;
+  background-color: #ff0000;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  .glow {
+  text-shadow: 0 0 5px #ff0000, 0 0 10px #ff0000, 0 0 20px #ff0000;
+}   
+}
+
+.Button:hover {
+    background-color:#ff0000;
+}
+
+.game-card {
+    background: var(--card-bg);
+    padding: 20px;
+    border-radius: 8px;
+    border-left: 4px solid var(--primary-glow);
+    flex: 1;
+    text-align: center;
+}
+
+.play-btn {
+    display: inline-block;
+    background: var(--primary-glow);
+    color: black;
+    padding: 10px 25px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 4px;
+    transition: 0.3s;
+}
+
+.play-btn:hover {
+    box-shadow: 0 0 15px var(--primary-glow);
+    filter: brightness(1.1);
+}
+
+footer { 
+  text-align: center; 
+  padding: 40px; 
+  opacity: 0.5;
+  fill: red;
+  
+}
