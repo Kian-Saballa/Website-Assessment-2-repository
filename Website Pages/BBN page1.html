@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="game.css">
+</head>
+<body>
+
+ <header class="header1">
+
+    <img src="Logo for cc.jpg" alt="Logo" class="logo">
+
+    <nav>
+  <ul>
+    <li><a href="BBN page1.html">Home</a></li>
+    <li><a href="BBN page2.html">About</a></li>
+    <li><a href="BBN page3.html">Killers</a></li>
+    <li><a href="BBN page4.html">Classes</a></li>
+    <li><a href="BBN page5.html">Play now!</a></li>
+  </ul>
+ </nav> 
+ 
+ </header>
+
+    <header>
+        <img src="BBN.jpg" alt="Title" class="Game-title">
+    </header>
+
+    <main class="container">
+        
+        <section class="content-section">
+            <h2>Welcome to Bite By Night</h2>
+            <p>Bite By Night is a popular Roblox asymmetrical survival horror game developed by the Bite By Night Dev Team, inspired by the Five Nights at Freddy's (FNAF) franchise and games like Dead by Daylight.  In this multiplayer experience, players are divided into two roles: Survivors who must complete objectives and survive until 6 AM, and Killers (animatronics) who hunt them down.</p>
+        </section>
+
+        <section class="content-section">
+            <h2>Why should you play? Here are some reviews</h2>
+            <div class="grid2">
+                <div class="game-card">
+                    <h3>Anonymous</h3>
+                    <p>Very good game, The maps are actually pretty balanced and The Killers feel really nice to control and play as.</p>
+                </div>
+                <div class="game-card">
+                    <h3>Anonymous</h3>
+                    <p>Been having a blast with it. Animations are incredibly fluid, models are amazing, soundtrack is phenomenal, and they absolutely cooked with the UI design</p>
+                </div>
+                <div class="game-card">
+                    <h3>Anonymous</h3>
+                    <p>Very good ngl, I played a lot of Asym games on Roblox, and it's cool!
+
+The maps are nice, tho i disliked warehouses as killer
+
+The task, even tho there's only 2, not bad at all
+
+Killer, being KILLER SIDED?! tbh playing killer and survivor... is both great! And earning scrape is FREAKIN EASY! AND GAMEPASSES ARE FREE!</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="content-section">
+            <h2>Gameplay</h2>
+            <video id="myVideo" controls loop>
+                <source src="BBN gameplay.mp4" type="video/mp4"></video>   
+        </section>
+
+        <section class="content-section">
+            <h2>Upcoming content from the devs</h2>
+            <p># PROGRESS UPDATE -# May 2nd, 2026.<br>
+            As promised, we will be communicating with the community and keeping everyone in the loop regarding development progress and our overall goals and plans.We've had some problems internally and conflicting issues with communication that have cost us quite a bit of development progress & time, which Revv & I are working on restoring ASAP. Bite By Night in the background has had problems with organization which we're handling once and for all, and we are turning the entire development process into a better, more organized one with improved communication and transparency. <br><br>
+            
+            ## Sadly, the Puppet update is going to be delayed until May 30th. We know a lot of people will be disappointed to hear this news, as we were excited to be given the opportunity to release an update like this, so early. However, this will allow us to drop a huge amount of content that is properly tested, polished and looked over with a close eye, as we are aware of the concerns that stemmed from the Technician's release. This will be a *big* update for us, so we want to make sure that something of this scale is handled properly to make sure everyone who loves the game and the franchise is satisfied. <br><br>
+            
+            __The expected content for this update is going to be__:<br>
+
+            - The Puppet<br>
+            - New Survivor<br>
+            - New Objectives<br>
+            - New Map<br>
+            - QOL, Bug Fixes, etc.<br>
+            -# Including DSD changes, balancing, and descriptions on moves!.<br>
+            - New Survivor Win Animations<br>
+            - Quests & Achievements<br>
+            - New Skins<br>
+            - As to be expected with content drops!<br><br><br>
+            
+            There is a lot more for us to add, especially lore-wise. We'll be trying to implement more lore "easter eggs" and additions into the game as time passes.<br>
+            Again, we are sorry for having to delay the update, as we know a lot of people are excited for it, and we are upset with how development was handled. Changes will be made immediately, and we promise to deliver better and uphold the standards Bite By Night has lived by.<br>
+            Thank you so much for your patience and support!<br></p>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>This Website is made with the love and support from me to one of my favourite games to come out in a while</p>
+    </footer>
+
+</body>
+
+<script>
+    const video = document.getElementById('myVideo');
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      video.play();
+    } else {
+      video.pause();
+    }
+  });
+}, { threshold: 0.5 });
+
+observer.observe(video);   
+</Script>
+
+</html>
